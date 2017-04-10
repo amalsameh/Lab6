@@ -6,13 +6,13 @@
   </head>
   <body>
     <h1><%=title%></h1>
-    <p>Contact Us</p>
+   
     <form method="POST" action="contactus">
     <div>
-    FullName: <input type="text" id="fullname"/><br>
+    FullName: <input type="text" id="fullname"/><br><br>
     Type:<label><input type="radio" name="type" checked value="Suggestion"/>Suggestion</label>
-    <label><input type="radio" name="type" value="Complain"/>Complain</label><br>
-    Message:<textarea id="message"></textarea>
+    <label><input type="radio" name="type" value="Complain"/>Complain</label><br><br>
+    Message:<textarea id="message"></textarea><br><br>
      <input type="hidden" name="_csrf" value="#{csrftoken}"/>
     <input type="Submit"/>   
     </div>
